@@ -3,160 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sidra Fayyaz - MSc Artificial Intelligence | Software Engineer | Frontend Developer & STEM Educator. Expert in React, Next.js, Python, Robotics & AI. Open to opportunities in Oman and Remote.">
-    <meta name="keywords" content="Sidra Fayyaz, Software Engineer Oman, Frontend Developer, React Developer, Artificial Intelligence, MSc AI, STEM Teacher, Robotics Mentor, Web Developer Oman">
+    <meta name="description" content="Sidra Fayyaz - MSc Artificial Intelligence | Software Engineer | Frontend Developer | STEM & Robotics Mentor. Experienced in React, Next.js, Python, AI & Web Development. Open to opportunities in Oman and Remote.">
+    <meta name="keywords" content="Sidra Fayyaz, Software Engineer Oman, Frontend Developer Oman, React Developer, AI Specialist, MSc AI, Robotics Mentor, STEM Teacher Oman, Web Developer">
     <meta name="author" content="Sidra Fayyaz">
-    <meta name="robots" content="index, follow">
     <title>Sidra Fayyaz | Software Engineer & AI Specialist | Oman</title>
-    
-    <!-- Open Graph / Social -->
+
+    <!-- Open Graph -->
     <meta property="og:title" content="Sidra Fayyaz | Software Engineer & AI Specialist">
-    <meta property="og:description" content="Passionate Software Engineer with MSc in AI, experienced in frontend development, robotics, and STEM education.">
+    <meta property="og:description" content="MSc Artificial Intelligence Graduate | Frontend Developer | Robotics & STEM Mentor">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sidrafayyaz.com">
-    <meta property="og:image" content="https://sidrafayyaz.com/assets/profile.jpg">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <meta property="og:url" content="https://myg-1107.github.io/sidra-fayyaz-portfolio/">
+    <meta property="og:image" content="https://myg-1107.github.io/sidra-fayyaz-portfolio/assets/profile.jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #6366f1;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <h2>Sidra Fayyaz</h2>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-indigo-600">Sidra <span class="text-violet-600">Fayyaz</span></h1>
+            
+            <div class="hidden md:flex space-x-8 text-lg">
+                <a href="#home" class="nav-link font-medium">Home</a>
+                <a href="#about" class="nav-link font-medium">About</a>
+                <a href="#experience" class="nav-link font-medium">Experience</a>
+                <a href="#projects" class="nav-link font-medium">Projects</a>
+                <a href="#skills" class="nav-link font-medium">Skills</a>
+                <a href="#contact" class="nav-link font-medium">Contact</a>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn">☰</button>
+            
+            <a href="Sidra Resume (1).pdf" target="_blank" 
+               class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-full font-medium transition">
+                Download CV
+            </a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Sidra Fayyaz</span></h1>
-            <h2>MSc Artificial Intelligence • Software Engineer • Frontend Developer</h2>
-            <p>Building engaging digital experiences & inspiring the next generation of STEM leaders in Oman and beyond.</p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn primary">View My Projects</a>
-                <a href="Sidra Resume (1).pdf" target="_blank" class="btn secondary">Download Resume</a>
+    <section id="home" class="hero-bg text-white min-h-screen flex items-center">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-5xl md:text-6xl font-bold leading-tight mb-4">
+                    Hi, I'm <span class="text-yellow-300">Sidra Fayyaz</span>
+                </h2>
+                <h3 class="text-2xl md:text-3xl mb-6 text-indigo-100">
+                    MSc Artificial Intelligence • Software Engineer • Frontend Developer
+                </h3>
+                <p class="text-lg text-indigo-100 mb-8">
+                    Passionate about creating impactful digital experiences and inspiring the next generation through STEM & AI education.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects" class="bg-white text-indigo-700 hover:bg-gray-100 px-8 py-4 rounded-full font-semibold text-lg transition">
+                        View My Projects
+                    </a>
+                    <a href="#contact" class="border-2 border-white hover:bg-white hover:text-indigo-700 px-8 py-4 rounded-full font-semibold text-lg transition">
+                        Get In Touch
+                    </a>
+                </div>
             </div>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/sidrafayyaz" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/sidrafayyaz" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:sidra.f9860@gmail.com"><i class="fas fa-envelope"></i></a>
+            
+            <div class="flex justify-center">
+                <img src="assets/profile.jpg" alt="Sidra Fayyaz" 
+                     class="w-80 h-80 object-cover rounded-3xl shadow-2xl border-8 border-white/30">
             </div>
-        </div>
-        <div class="hero-image">
-            <img src="assets/profile.jpg" alt="Sidra Fayyaz - Software Engineer Profile" width="320" height="320">
         </div>
     </section>
 
     <!-- About -->
-    <section id="about" class="section">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-grid">
-            <div class="about-text">
-                <p>Dedicated Software Engineering graduate currently pursuing MSc in Artificial Intelligence at Sultan Qaboos University. With strong expertise in frontend technologies and hands-on experience in robotics, STEM education, and AI applications, I create impactful digital solutions while inspiring young minds through technology.</p>
-                <p>I have successfully delivered numerous web projects and educational programs that increased student engagement by up to 40%. Passionate about clean code, user-centered design, and making technology accessible.</p>
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">About Me</h2>
+            <div class="max-w-3xl mx-auto text-lg leading-relaxed text-gray-700">
+                <p class="mb-6">
+                    Dedicated Software Engineering graduate currently pursuing <strong>MSc in Artificial Intelligence</strong> at Sultan Qaboos University. 
+                    I specialize in frontend development and have a strong passion for education technology, robotics, and making complex concepts simple for students.
+                </p>
+                <p>
+                    With proven experience in building responsive web applications and mentoring students in coding & robotics, I strive to create engaging digital solutions 
+                    that drive real impact.
+                </p>
             </div>
         </div>
     </section>
 
     <!-- Experience -->
-    <section id="experience" class="section bg-light">
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="date">Feb 2026 – Present</div>
-                <div class="content">
-                    <h3>IT Teacher / Mentor</h3>
-                    <h4>SITER Academy Norway (Remote)</h4>
-                    <ul>
-                        <li>Delivering Python lessons to Grade 3–4 students</li>
-                        <li>Developed complete curriculum with 90% completion rate</li>
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Experience</h2>
+            <div class="space-y-10">
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold">IT Teacher / Mentor (Remote)</h3>
+                            <p class="text-indigo-600">SITER Academy Norway</p>
+                        </div>
+                        <p class="text-gray-500">Feb 2026 – Present</p>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Delivering Python coding lessons to Grade 3–4 students</li>
+                        <li>Developed complete curriculum and learning strategies</li>
+                        <li>Achieved 90% lesson completion rate</li>
                     </ul>
                 </div>
-            </div>
-            <!-- Add more experiences similarly -->
-            <div class="timeline-item">
-                <div class="date">Jun 2025</div>
-                <div class="content">
-                    <h3>Junior Frontend Developer</h3>
-                    <h4>Obazaar, Oman (Remote)</h4>
-                    <p>Redesigned company website using React & Next.js. Improved usability by 30%.</p>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-hover">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold">Junior Frontend Developer</h3>
+                            <p class="text-indigo-600">Obazaar, Oman</p>
+                        </div>
+                        <p class="text-gray-500">June 2025</p>
+                    </div>
+                    <p class="text-gray-700">Redesigned company website using React & Next.js. Improved usability and visual appeal by 30%.</p>
                 </div>
+
+                <!-- Add more experiences as needed -->
             </div>
         </div>
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="section">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Crime Reporting System</h3>
-                <p>Responsive web app with map integration, built with React.js, Leaflet.js & PWA support.</p>
-                <a href="#" class="project-link">Live Demo →</a>
-            </div>
-            <div class="project-card">
-                <h3>AI Image Generator</h3>
-                <p>Interactive website for AI image generation using HTML, CSS & JavaScript.</p>
-                <a href="#" class="project-link">View Project →</a>
-            </div>
-            <div class="project-card">
-                <h3>Smart Robot Navigation</h3>
-                <p>Python simulation with AI obstacle avoidance achieving 90% accuracy.</p>
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden card-hover">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <span class="text-4xl">🗺️</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-2">Crime Reporting System</h3>
+                        <p class="text-gray-600 mb-4">Fully responsive web application with map integration, filtering, and PWA support built using React.js & Leaflet.js.</p>
+                        <a href="#" class="text-indigo-600 hover:underline font-medium">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden card-hover">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <span class="text-4xl">🤖</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-2">Smart Robot Navigation</h3>
+                        <p class="text-gray-600 mb-4">Python-based AI simulation with obstacle avoidance achieving 90% navigation accuracy.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden card-hover">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <span class="text-4xl">🖼️</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-2">AI Image Generator</h3>
+                        <p class="text-gray-600 mb-4">Interactive website for generating AI images using HTML, CSS & JavaScript.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="section bg-light">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3>Frontend</h3>
-                <div class="skill-tags">
-                    <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>Next.js</span><span>TypeScript</span>
-                </div>
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Technical Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
+                <div class="bg-white p-6 rounded-2xl shadow-sm">HTML5 / CSS3 / JavaScript</div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm">React.js / Next.js / TypeScript</div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm">Python / AI & Machine Learning</div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm">Robotics & IoT</div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm">Figma / UI/UX Design</div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm">Git / Firebase / SQL</div>
             </div>
-            <div class="skill-category">
-                <h3>AI &amp; Backend</h3>
-                <div class="skill-tags">
-                    <span>Python</span><span>TensorFlow</span><span>Machine Learning</span><span>IoT</span>
-                </div>
-            </div>
-            <!-- More categories -->
         </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section">
-        <h2 class="section-title">Get In Touch</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Message" rows="6" required></textarea>
-            <button type="submit" class="btn primary">Send Message</button>
-        </form>
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-2xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">Let's Connect</h2>
+            <p class="text-xl text-gray-600 mb-10">Open to Software Engineering, Frontend, AI, and STEM Education opportunities in Oman and remotely.</p>
+            
+            <div class="flex justify-center gap-6 text-4xl mb-10">
+                <a href="https://linkedin.com" target="_blank" class="hover:text-indigo-600 transition"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com" target="_blank" class="hover:text-indigo-600 transition"><i class="fab fa-github"></i></a>
+                <a href="mailto:sidra.f9860@gmail.com" class="hover:text-indigo-600 transition"><i class="fas fa-envelope"></i></a>
+            </div>
+            
+            <a href="mailto:sidra.f9860@gmail.com" 
+               class="inline-block bg-indigo-600 text-white text-xl px-10 py-4 rounded-full hover:bg-indigo-700 transition">
+                Send Me an Email
+            </a>
+        </div>
     </section>
 
-    <footer>
+    <footer class="bg-gray-900 text-white py-10 text-center">
         <p>&copy; 2026 Sidra Fayyaz. All Rights Reserved.</p>
-       </footer>
+        <p class="text-sm mt-2 text-gray-400">Crafted for career growth in Software Engineering & AI</p>
+    </footer>
 
-    <script src="script.js"></script>
-    <script src="xlsl.js"></script>
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
